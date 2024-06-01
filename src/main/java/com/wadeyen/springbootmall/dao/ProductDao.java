@@ -3,7 +3,11 @@ package com.wadeyen.springbootmall.dao;
 import com.wadeyen.springbootmall.dto.ProductRequest;
 import com.wadeyen.springbootmall.model.Product;
 
+import java.util.List;
+
 public interface ProductDao {
+
+    List<Product> getProducts();
 
     Product getProductById(Integer productId);
 
